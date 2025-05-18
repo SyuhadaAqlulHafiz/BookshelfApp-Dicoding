@@ -1,0 +1,233 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #FAFFC5;
+    text-align: left;
+    padding-block: 20px;
+    padding-inline: 50px;
+    margin-bottom: 20px;
+}
+
+main {
+    justify-items: center;
+    padding-inline: 30px;
+}
+.part-input{
+    width: 100%;
+}
+.input {
+    justify-items: center;
+    width: 100%;
+    padding-block: 50px;
+    background-color: #fcfee9;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+#bookForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    padding-inline: 30px;
+}
+
+#bookForm > div label {
+    margin-bottom: 8px;
+    margin-inline-start: 3px;
+}
+
+.input-judul, .input-author, .input-tahun {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=number] {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fdfef6;
+    margin-bottom: 15px;
+}
+
+#bookFormSubmit {
+    padding: 10px 25px;
+    border-radius: 8px;
+    align-self: flex-end;
+    background-color: #edede6;
+    cursor: pointer;
+}
+
+#bookFormSubmit:hover {
+    background-color: #edede639;
+}
+
+.cariBuku {
+    width: 100%;
+    justify-items: center;
+    margin-block: 15px;
+    padding: 30px;
+    background-color: #fcfee9;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+#searchBook {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-block: 20px;
+}
+
+#searchBook label {
+    margin-right: 10px;
+}
+
+#searchBook input{
+    width: 75%;
+}
+
+#searchBook button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #edede6;
+    border-radius: 8px;
+}
+
+.part-output {
+    width: 100%;
+}
+.uncomplete {
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    max-height: 300px;
+    background-color: #fcfee9;
+}
+.uncomplete h2 {
+    position: sticky;
+    top: 0;
+    background-color: #FAFFC5;
+    padding: 20px;
+}
+.complete {
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    max-height: 300px;
+    background-color: #fcfee9;
+}
+.complete h2 {
+    position: sticky;
+    top: 0;
+    background-color: #FAFFC5;
+    padding: 20px;
+}
+
+
+.listBook {
+    border: 2px solid black;
+    padding: 20px;
+    margin-block: 15px;
+    margin-inline: 20px; 
+    border-radius: 10px;
+}
+.out-judul, .out-author, .out-year {
+    margin-bottom: 10px;
+}
+.buttonIsComplete {
+    background-color: #1dc11d;
+    padding: 8px 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.buttonRemove {
+    background-color: red;
+    padding: 8px 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.buttonEdit {
+    background-color: #b5b4b4;
+    padding: 8px 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttonIsComplete:hover{
+    background-color: #1dc11d76;
+}
+.buttonRemove:hover{
+    background-color: rgba(255, 0, 0, 0.46);
+}
+.buttonEdit:hover{
+    background-color: #b5b4b488;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+@media screen and (min-width:900px) {
+    .part-output {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    main {
+        display: flex;
+        gap: 30px;
+    }
+    .part-input {
+        width: 60%;
+    }
+    .part-output {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .uncomplete {
+        max-height: 350px;
+    }
+    .complete {
+        max-height: 350px;
+    }
+}
+
+@media screen and (min-width:1150px) {
+    .button {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
